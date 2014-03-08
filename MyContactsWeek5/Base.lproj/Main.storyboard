@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -46,6 +47,26 @@
                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="xmm-NZ-9vp"/>
                                         </connections>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jka-YN-GBZ">
+                                        <rect key="frame" x="24" y="176" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="doneEditing:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="RLX-WO-LuJ"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="SMK-Qz-ml0"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-fA-Gn7">
+                                        <rect key="frame" x="24" y="133" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="doneEditing:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="TRF-yu-H7n"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="NPS-xA-2Oe"/>
+                                        </connections>
+                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zy8-92-KQx">
                                         <rect key="frame" x="24" y="57" width="236" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,7 +78,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-5G-NeG">
-                                        <rect key="frame" x="220" y="133" width="34" height="30"/>
+                                        <rect key="frame" x="217" y="214" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Save">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,7 +98,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dox-O9-die">
-                                        <rect key="frame" x="24" y="133" width="99" height="30"/>
+                                        <rect key="frame" x="24" y="214" width="99" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="View Contacts">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,10 +122,12 @@
                     <connections>
                         <outlet property="Scrollview" destination="3Ue-Hy-r3L" id="if9-dN-5Lz"/>
                         <outlet property="btnBack" destination="oi4-gq-04h" id="TBD-0C-9YO"/>
+                        <outlet property="txtBirthday" destination="Jka-YN-GBZ" id="yH5-0H-zyY"/>
                         <outlet property="txtData" destination="68V-KA-OAk" id="ROH-Ah-yxW"/>
                         <outlet property="txtEmail" destination="TE6-5I-0OY" id="Ap1-zf-ShF"/>
                         <outlet property="txtFirst" destination="B22-CU-ZqY" id="Gni-2v-NbI"/>
                         <outlet property="txtLast" destination="Zy8-92-KQx" id="Di5-Se-JCB"/>
+                        <outlet property="txtPhone" destination="iMd-fA-Gn7" id="TUG-YD-eHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
