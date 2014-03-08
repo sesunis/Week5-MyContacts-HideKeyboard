@@ -1,9 +1,9 @@
 //
-//  MyContactsWeek5ViewController.h
+//  MyContactsWeek5ViewController.m
 //  MyContactsWeek5
 //
-//  Created by Charles Konkol on 2/16/14.
-//  Copyright (c) 2014 Chuck Konkol. All rights reserved.
+//  Created by Sarah Esunis 3/08/14.
+//  Copyright (c) 2014 Sarah Esunis. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -22,5 +22,7 @@
 - (IBAction)btnBack:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *btnBack;
 - (IBAction)btnView:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *txtPhone;
+@property (strong, nonatomic) IBOutlet UITextField *txtBirthday;
 
 @end
